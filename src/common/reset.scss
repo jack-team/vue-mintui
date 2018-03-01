@@ -1,5 +1,3 @@
-@import "size";
-
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button{
     -webkit-appearance: none !important;
@@ -28,7 +26,7 @@ body{
 button,
 input,
 body{
-  font-size: $_24;
+  font-size: 14px;
   font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
   line-height: 1.1;
 }

@@ -1,14 +1,13 @@
 <template>
-    <div>
-        <router-view />
-    </div>
+    <div>1111111</div>
 </template>
-<script type="es6">
-    export default{
-        data(){
-            return{
 
-            }
-        },
+<script>
+    export default {
+        name: "tpl"
     }
 </script>
+
+<style scoped>
+
+</style>

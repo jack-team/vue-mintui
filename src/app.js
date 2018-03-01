@@ -4,26 +4,22 @@
 
 import Vue from 'vue';
 
-
-import 'swiper/dist/css/swiper.min.css';
-
+import 'mint-ui/lib/style.css';
 //根组件
 import App from './components/App.vue';
 
 import router from './router';
 
-import store from './store'
-
-import './directive';
+import Mint from 'mint-ui';
+Vue.use(Mint);
 
 // 开启debug模式
 Vue.config.debug = true;
 
 new Vue({
     render: ( h )=> h ( App ),
-    store:  store,
-    router: router
-}).$mount('#app');
+    router:router
+}).$mount('#root');
 
 
 
