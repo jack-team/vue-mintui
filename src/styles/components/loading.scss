@@ -1,0 +1,22 @@
+.loading-modal{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.loading-icon{
+  width: 100px;
+  height: 100px;
+  background-image:url("./../image/common/loading.gif");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.loading-text{
+  text-align: center;
+  font-size: 14px;
+  color:#666;
+}

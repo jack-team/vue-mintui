@@ -1,0 +1,74 @@
+.m-select-wrapper{
+  .m-select{
+    height: 39px;
+    border-radius: 4px;
+    border:1px solid #ccc;
+    background: #fff;
+    overflow: hidden;
+    position: relative;
+
+    .m-select-input{
+      height: 100%;
+      width: 100%;
+      padding: 0 10px;
+      font-size: 14px;
+      color: #666;
+    }
+  }
+
+  .m-select:after{
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid #aaa;
+    position: absolute;
+    right: 10px;
+    top:0;
+    bottom: 0;
+    margin: auto;
+    transform: rotate(180deg);
+    transform-origin:50% 50%
+  }
+
+  .m-select.open:after {
+    transform: rotate(0deg);
+  }
+
+  .modal-option{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    height: 200px;
+    background: #fff;
+    z-index: 2;
+    transform: translateY(100%);
+    transition: all .1s linear;
+    overflow: hidden;
+    display: flex;
+
+    .iscroll{
+      flex:1;
+      overflow: hidden;
+    }
+
+    .option{
+      padding: 15px ;
+      border-bottom: 1px solid #ececec;
+      text-align: center;
+      font-size: 14px;
+      color: #545454;
+    }
+
+  }
+
+  .modal-option.up{
+    transform: translateY(0);
+  }
+
+
+}
+
